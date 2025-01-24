@@ -4,6 +4,9 @@ import { SyncBase } from './syncbase';
 import winston from 'winston';
 
 export abstract class SyncClient extends SyncBase {
+    on(arg0: string, arg1: () => void) {
+        throw new Error("Method not implemented.");
+    }
     constructor(logger: winston.Logger) {
         super(logger) ;
     }
